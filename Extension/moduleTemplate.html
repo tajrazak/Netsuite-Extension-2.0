@@ -1,0 +1,13 @@
+<div class="row" style="margin-top: 20px;margin-bottom: 20px">
+  <div class="container">
+  <input ng-model="keyword" placeholder="search module"/>
+  <br />
+  <br />
+  <select class="form-control" multiple
+  ng-model="$root.selection"
+  ng-options="module.name as module.name group by option.category for module in ctrl.modules | unique:'name' | filter:keyword ">
+  </select>
+  <br />
+  <button type="button" class="btn btn-sm btn-primary btn-font" ng-disabled="!$root.selection.length>0" ui-sref="api">Next >></button>
+  </div>
+</div>

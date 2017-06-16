@@ -1,0 +1,13 @@
+<div class="row" style="margin-top: 20px;margin-bottom: 20px">
+  <div class="container">
+    <input ng-model="keyword" placeholder="search module"/>
+      <br />
+      <br />
+    <select multiple="true" class="form-control" ng-model="apiCtrl.selectedapis"
+    ng-options="api as api.api group by api.name for api in apiCtrl.apilist | filter:keyword">
+    </select>
+    <br/>
+    <button type="button" class="btn btn-sm btn-warning btn-font" ui-sref="home"><< Back</button>
+    <button type="button" id='click-me' class="btn btn-sm btn-primary btn-font" ng-click="apiCtrl.clickHandler()">Place It</button>
+  </div>
+</div>

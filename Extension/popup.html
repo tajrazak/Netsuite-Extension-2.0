@@ -1,0 +1,47 @@
+<html ng-app="myApp">
+    <head>
+	      <link href="bootstrap.min.css" rel="stylesheet"/>
+        <script src="underscore.min.js"></script>
+        <script src="popup.js"></script>
+        <script src="angular.min.js"></script>
+        <script src="angular-ui.min.js"></script>
+        <script src="angular-ui-router.min.js"></script>
+        <script src="controller.js"></script>
+        <script src="apiService.js"></script>
+        <style type="text/css" media="screen">
+            body { width:265px;height: 300px;text-align: center; }
+            select{height: 150px;}
+               .btn-font{ font-size: 15px; }
+              .animate-enter,
+              .animate-leave
+              {
+                  -webkit-transition: 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+                  -moz-transition: 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+                  -ms-transition: 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+                  -o-transition: 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+                  transition: 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+              }
+              .animate-enter {
+                  left: 100%;
+              }
+              .animate-enter.animate-enter-active {
+                  left: 0;
+              }
+              .animate-leave {
+                  left: 0;
+              }
+              .animate-leave.animate-leave-active{
+                  left: -100%;
+              }
+              .logo{
+                  height: 50px;
+                  margin-top: 10px;
+              }
+          </style>
+    </head>
+    <body>
+         <h5 style="margin-top:19px;height:20px;color:#5d64ee"><a href="https://debugger.na1.netsuite.com/app/common/scripting/scriptdebugger.nl?whence=" target="_blank"><b>N</b><b>e</b><b>t</b>suite Debugger 2.0</a></h5>
+         <!-- <img src="amzurlogo.png" class="logo"/> -->
+         <div ui-view></div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+app.controller('moduleCtrl',function($scope){
+  this.modules = [{name:'N/record'},
+  {name:'N/search'},
+  {name:'N/runtime'},
+  {name:'N/config'},
+  {name:'N/https'},
+  {name:'N/http'},
+  {name:'N/url'},
+  {name:'N/plugin'},
+  {name:'N/crypto'},
+  {name:'N/email'},
+  {name:'N/format'},
+  {name:'N/error'},
+  {name:'N/file'},
+  {name:'N/task'},
+  {name:'N/util'},
+  {name:'N/transaction'},
+  {name:'N/encode'},
+  {name:'N/cache'},
+  {name:'N/currency'}];
+})
