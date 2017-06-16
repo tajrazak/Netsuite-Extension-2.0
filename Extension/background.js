@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener(
     var modules = JSON.stringify(request.moduleList),params,func;
     if(modules.length > 0){
       modules = modules.length == 0?[]:String(modules),
-      func = 'function('+request.params+'){\\n\\n'+request.code.replace('undefined','')+'\\n\\n)})';
+      func = 'function('+request.params+'){\\n\\n'+request.code.replace('undefined','')+'\\n\\n})';
     }else{
       modules = '[]',func = 'function(){\\n\\n\\n})'
     }
