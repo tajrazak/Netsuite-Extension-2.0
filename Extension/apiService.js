@@ -11,7 +11,7 @@ app.factory('apiservice',function(){
                           {name:'N/record',api:'transform',code:"var objRecord = record.transform({\n\t\tfromType:record.Type. \t,\n\t\tfromId:\"\",\n\t\ttoType: record.Type. \t,\n\t\tisDynamic: true\n\t});"},
 
                           {name:'N/search',api:'create',code:"\\n\t var createdSearch = search.create({\n\t\ttype:search.Type. ,\t //if you want to create search on custom record type, please use the internalid.\n\t\tcolumns:[],\n\t\tfilters:[]\n\t });"},//search start from here
-                          {name:'N/search',api:'load',code:"\\n\t var loadedSearch = search.load({\n\t\ttype:search.Type. \"\",\n\t\tid:\"\"\n\t });"},
+                          {name:'N/search',api:'load',code:"\\n\t var loadedSearch = search.load({\n\t\tid:\"\"\n\t });"},
                           {name:'N/search',api:'delete',code:"search.delete({\n\t\tid:\"\" //internalid of the search\n\t});"},
                           {name:'N/search',api:'duplicates',code:"var duplicatesRecords = search.duplicates({\n\t\ttype:search.Type. ,\n\t\tid:\"\" //internalid of the existing records\n\t});"},
                           {name:'N/search',api:'global',code:"var customerSearch = search.global({\n\t\tkeywords:\"\" //Global search keywords string or expression.\n\t});"},
